@@ -1,3 +1,43 @@
+.radio-toolbar input[type="radio"] {
+  display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 4px 11px;
+  font-family: Arial;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #bbb;
+}
+
+/* IMAGE STYLES */
+.MetodePembayaran [type=radio]+img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.MetodePembayaran [type=radio]:checked+img {
+  outline: 2px solid rgb(0, 0, 0);
+}
+
+/* HIDE RADIO */
+.MetodePembayaran [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.MetodePembayaran .gambar{
+  width: 150px;
+  height: 100px;
+}
+
 ul {
   list-style: none;
 }
@@ -9,26 +49,6 @@ li {
 
 input {
   visibility: hidden;
-}
-
-.bttn{
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.labal {
-  cursor: pointer;
-  border-radius: 10%;
-  border-style: ridge;
-}
-
-input:checked + label {
-  background-color: gray;
-  width: auto;
-  height: auto;
-  color: white;
 }
 
 body {
