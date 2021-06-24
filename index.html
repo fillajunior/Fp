@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/logo/amikom.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/all.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,15 +23,19 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Sidebar #1</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
     <aside class="sidebar">
         <div class="toggle">
-            <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-                <span></span>
-            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="side-inner">
 
@@ -73,7 +79,75 @@
     <main>
         <div class="site-section">
             <div class="containers">
-                
+                <div class="card">
+                    <div class="card-header dark text-white">
+                        <h2 class="judul">Forum</h2>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead class="dark text-white">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nama</th>
+                                    <th scope="col">Pertanyaan</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Benny</td>
+                                    <td>Saya ingin mengubah warna latar belakang menggunakan colorpicker tanpa mengklik
+                                        changecolor tombol. <br>Yang saya inginkan adalah mengubah warna latar belakang saat saya
+                                        memilih RGB di colorpicker.</td>
+                                    <td>Juni 21, 2021</td>
+                                    <td><a href="replay1.html" class="btn btn-primary">Show</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Andre</td>
+                                    <td>Saya perlu membuat tautan yang diklik agar aktif. Saya memiliki kode berikut di bawah di
+                                        bawah ini dan saya mencoba <br>kode skrip yang berbeda untuk membuat tautan aktif tetapi
+                                        sepertinya tidak berhasil. Apa yang tampaknya menjadi masalah?</td>
+                                    <td>Januari 24, 2021</td>
+                                    <td><a href="replay2.html" class="btn btn-primary">Show</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Alhus</td>
+                                    <td>oke jadi di sini masalahnya.ok jadi ini semua berfungsi dengan baik, elemen
+                                        menyembunyikan dirinya sendiri ketika saya menggerakkan mouse dari div kanan ke kiri.
+                                        <br>
+                                        Masalahnya adalah itu juga bersembunyi ketika saya bergerak di antara berbagai div di
+                                        dalamnya. Saya perlu membuat pengguna menavigasi di sekitar div kanan, lalu
+                                        <br>
+                                        menghilangkannya ketika menggerakkan mouse ke div kiri.
+                                        Masalah lain adalah saya tidak dapat menggunakan jquery pada proyek ini, harus dilakukan
+                                        <br>
+                                        dalam vanilla js murni. Apakah benar-benar tidak ada cara bagi DOM untuk menangani acara
+                                        semacam ini?</td>
+                                    <td>Febuari 15, 2021</td>
+                                    <td><a href="replay3.html" class="btn btn-primary">Show</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Fajar</td>
+                                    <td>Apakah bootstrap mendukung col berturut-turut tanpa wadah</td>
+                                    <td>April 10, 2021</td>
+                                    <td><a href="replay4.html" class="btn btn-primary">Show</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Filla</td>
+                                    <td>Bagaimana saya bisa menambahkan margin antara tiga kolom Bootstrap tanpa membungkusnya?</td>
+                                    <td>Juli 06, 2021</td>
+                                    <td><a href="replay5.html" class="btn btn-primary">Show</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -82,6 +156,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>

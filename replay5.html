@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/logo/amikom.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="toggle">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="side-inner">
+
+            <div class="logo-wrap">
+                <div class="logo">
+                    <span>C</span>
+                </div>
+                <span class="logo-text">Colorlib</span>
+            </div>
+
+            <div class="search-form">
+                <form action="#">
+                    <span class="wrap-icon">
+                        <span class="icon-search2"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="active"><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-home2 mr-3"></span><span class="menu-text">Home</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-videocam mr-3"></span><span class="menu-text">Videos</span></a>
+                    </li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-book mr-3"></span><span class="menu-text">Books</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-shopping-cart mr-3"></span><span
+                                class="menu-text">Store</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-pie-chart mr-3"></span><span
+                                class="menu-text">Analytics</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-cog mr-3"></span><span
+                                class="menu-text">Settings</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="site-section">
+            <div class="containers">
+                <div class="card">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Filla Juli 06, 2021
+                    </div>
+                    <div class="card-body">
+                        <img src="images/forum/q5.1.jpg" alt="">
+                        <p>Jadi saya memiliki tiga kolom yang masing-masing lebarnya 4 kolom dan setiap kali saya
+                            menambahkan m-3 (margin sekeliling) mereka putus karena itu, bagaimana saya bisa
+                            menampungnya? Jadi mereka tetap semua 3 di baris yang sama?
+                            <br>
+                        </p>
+                        <img src="images/forum/q5.2.jpg" alt="">
+                        <br>
+                        <button type="button" class="btn btn-primary mt-3 button-replay">Replay</button>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Benny April 15, 2021
+                    </div>
+                    <div class="card-body">
+                        <p>Satu-satunya cara saya melihat sekeliling ini adalah dengan membuat sarang elemen lain.
+                        </p>
+                        <img src="images/forum/aw11.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Fajar April 18, 2021
+                    </div>
+                    <div class="card-body">
+                        <p>Sistem kolom Bootstrap (seperti yang mungkin Anda ketahui) didasarkan pada gagasan bahwa
+                            halaman tersebut memiliki 12 kolom nosional. Anda kemudian menggunakan kelas col-* untuk
+                            menunjukkan berapa banyak dari 12 kolom yang digunakan setiap elemen. Jadi, dalam kasus ini,
+                            Anda telah mendeklarasikan bahwa setiap elemen membutuhkan 4 kolom, yang berarti mereka
+                            menggunakan 12 kolom nosional.
+
+                            Masalahnya adalah margin dalam HTML berada di luar elemen. Jadi, jika Anda memiliki tiga
+                            elemen, masing-masing menggunakan 4 kolom, dan kemudian menambahkan beberapa margin, Anda
+                            sekarang memiliki lebih dari lebar 12 kolom yang tersedia (di sini, 12 kolom ditambah tiga
+                            lot m-3). Akibatnya, elemen ketiga tidak memiliki cukup ruang untuk ditampilkan dan mengalir
+                            ke baris berikutnya.
+
+                            Untuk menghindari ini, Anda dapat menggunakan padding alih-alih margin (karena padding
+                            berada di dalam elemen, Anda mendapatkan pemisahan visual saat menempel pada lebar grid).
+                            Atau, Anda bisa mengurangi lebar elemen menjadi col-3 dan menambahkan margin Anda di luar
+                            itu. Namun, ini mungkin berarti (tergantung pada tata letak Anda) bahwa itu tidak
+                            menggunakan lebar penuh.
+
+                            Pada akhirnya, jika Anda membutuhkan tiga elemen di seluruh halaman dengan margin, mungkin
+                            lebih baik untuk menentukan kelas Anda sendiri daripada mencoba menggunakan kelas Bootstrap.
+                            Kerangka kerja sangat bagus saat Anda bekerja dengannya, dan menyebalkan saat Anda bekerja
+                            melawannya!</p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Andre April 20, 2021
+                    </div>
+                    <div class="card-body">
+                        <img src="images/forum//aw12.jpg" alt="">
+                        <p>gunakan col alih-alih col-4</p>
+                    </div>
+                </div>
+                <div class="card mt-3 replay-forum">
+                    <div class="card-header dark text-white">
+                        Replay
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="replay">Replay</label>
+                            <textarea class="form-control" id="replay" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-danger button-close">Close</button>
+                        <button type="button" class="btn btn-primary ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/forum.js"></script>
+</body>
+
+</html>
