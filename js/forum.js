@@ -1,12 +1,14 @@
 $(document).ready(function () {
     
+    $('.replay').hide();
     $('.replay-forum').hide();
     $('.button-replay').click(function () {
-        console.log('success')
         $('.replay-forum').show()
+        $('.button-replay').html("Html")
     })
     $('.button-close').click(function () {
     
         $('.replay-forum').hide()
+        $('#replay').val("")
     })
 })
