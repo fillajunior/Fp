@@ -1,28 +1,40 @@
-.radio-toolbar input[type="radio"] {
+.BioData{
+  width: 300px;
+}
+
+.ItemPembayaran input[type="radio"] {
   display: none;
 }
 
-.radio-toolbar label {
-  display: inline-block;
+.ItemPembayaran label {
+  display: list-item;
+  border-radius: 10px;
   background-color: #ddd;
-  padding: 4px 11px;
+  padding: 3px 20px;
   font-family: Arial;
   font-size: 16px;
   cursor: pointer;
 }
 
-.radio-toolbar input[type="radio"]:checked+label {
-  background-color: #bbb;
+.ItemPembayaran input[type="radio"]:checked+label {
+  background-color: rgb(165, 162, 162);
 }
+
 
 /* IMAGE STYLES */
 .MetodePembayaran [type=radio]+img {
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 /* CHECKED STYLES */
 .MetodePembayaran [type=radio]:checked+img {
   outline: 2px solid rgb(0, 0, 0);
+
+}
+
+.Konfirm{
+  width: 300px;
 }
 
 /* HIDE RADIO */
@@ -34,21 +46,17 @@
 }
 
 .MetodePembayaran .gambar{
-  width: 150px;
+  width: 200px;
   height: 100px;
 }
 
-ul {
+.side ul {
   list-style: none;
 }
 
-li {
+.side li {
   display: inline-block;
   margin-right: 15px;
-}
-
-input {
-  visibility: hidden;
 }
 
 body {
@@ -181,6 +189,7 @@ aside .side-inner .logo-wrap .logo {
   -o-transition: .3s margin ease;
   transition: .3s margin ease;
   margin: 0 auto 50px 10px;
+  cursor: pointer;
 }
 
 .show-sidebar aside .side-inner .logo-wrap .logo {

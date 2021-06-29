@@ -10,17 +10,24 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
-
+    
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/Pembayaran.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
     <title>Pembayaran</title>
 </head>
 
@@ -48,7 +55,7 @@
                     <input type="text" class="form-control" placeholder="Search...">
                 </form>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu side">
                 <ul>
                     <li><a href="index.html" class="d-flex align-items-center"><span
                                 class="wrap-icon icon-home2 mr-3"></span><span class="menu-text">Home</span></a></li>
@@ -72,156 +79,191 @@
     </aside>
     <main>
         <div class="site-section">
-            <div class="containers">
-                <h1 class="display-4"><br>Pembayaran</h1>
-                
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <select class="form-control" id="TahunKuliah">
-                              <option>Tahun Kuliah</option>
-                              <option value="2021/2022">2021/2022</option>
-                              <option value="2020/2021">2020/2021</option>
-                              <option value="2019/2020">2019/2020</option>
-                              <option value="2018/2019">2018/2019</option>
-                            </select>
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="display-4">Pembayaran</h1>
+                    </div>
+                    
+                    <div class="row mt-3 ml-3">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select class="form-control" id="TahunKuliah">
+                                    <option>Tahun Kuliah</option>
+                                    <option value="2021/2022">2021/2022</option>
+                                    <option value="2020/2021">2020/2021</option>
+                                    <option value="2019/2020">2019/2020</option>
+                                    <option value="2018/2019">2018/2019</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <select class="form-control" id="Semester">
+                                    <option>Semester</option>
+                                    <option value="Ganjil">Ganjil</option>
+                                    <option value="Genap">Genap</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="form-group">
-                            <select class="form-control" id="Semester">
-                              <option>Semester</option>
-                              <option value="Ganjil">Ganjil</option>
-                              <option value="Genap">Genap</option>
-                            </select>
+                
+                    <div class="card mx-3 ItemPembayaran">
+                        <div class="card-header">
+                            <h5 class="ml-3 text-uppercase">Item pembayaran</h5>
+                        </div>
+
+                        <div class="row ml-1">
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Spp Tetap" name="ItemP" value="Rp1.975.000">
+                                <label for="Spp Tetap">Spp Tetap</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Spp Variable" name="ItemP" value="Rp110.000">
+                                <label for="Spp Variable">Spp Variable</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Sarana Prasarana" name="ItemP" value="Rp0">
+                                <label for="Biaya Sarana Prasarana">Biaya Sarana Prasarana</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Perkuliahan Perbaikan" name="ItemP" value="Rp100.000">
+                                <label for="Biaya Perkuliahan Perbaikan">Biaya Perkuliahan Perbaikan</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Herregistrasi Tinggal Wisuda" name="ItemP" value="Rp100.000">
+                                <label for="Herregistrasi Tinggal Wisuda">Herregistrasi Tinggal Wisuda</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Herregistrasi Tinggal Pendadarana" name="ItemP" value="Rp100.000">
+                                <label for="Herregistrasi Tinggal Pendadarana">Herregistrasi Tinggal Pendadarana</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Cuti" name="ItemP" value="Rp100.000">
+                                <label for="Cuti">Cuti</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Wisuda" name="ItemP" value="1.600.000">
+                                <label for="Biaya Wisuda">Biaya Wisuda</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Pendukung" name="ItemP" value="Rp0">
+                                <label for="Biaya Pendukung">Biaya Pendukung</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Dicutikan" name="ItemP" value="Rp200.000">
+                                <label for="Dicutikan">Dicutikan</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Pengunduran Diri" name="ItemP" value="Rp100.000">
+                                <label for="Pengunduran Diri">Pengunduran Diri</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Pendadaran" name="ItemP" value="Rp50.000">
+                                <label for="Pendadaran">Pendadaran</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Ujian Susulan" name="ItemP" value="Rp0">
+                                <label for="Ujian Susulan">Ujian Susulan</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Salinan Kwitansi" name="ItemP" value="Rp5.000">
+                                <label for="Biaya Salinan Kwitansi">Biaya Salinan Kwitansi</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Lupa Password" name="ItemP" value="Rp10.000">
+                                <label for="Biaya Lupa Password">Biaya Lupa Password</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Cetak KTM Rusak" name="ItemP" value="Rp20.000">
+                                <label for="Biaya Cetak KTM Rusak">Biaya Cetak KTM Rusak</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Tunggakan" name="ItemP" value="Rp0">
+                                <label for="Tunggakan">Tunggakan</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Biaya Legalisir" name="ItemP" value="Rp0">
+                                <label for="Biaya Legalisir">Biaya Legalisir</label>
+                            </div>
+                            <div class="col-sm-4 mt-3">
+                                <input type="radio" id="Study visit kelas internasional" name="ItemP" value="Rp7.500.000">
+                                <label for="Study visit kelas internasional">Study visit kelas internasional</label>
+                            </div>
+                            <div class="col-sm-4 mt-3 mb-3">
+                                <input type="radio" id="Biaya TOEFL" name="ItemP" value="Rp100.000">
+                                <label for="Biaya TOEFL">Biaya TOEFL</label>
+                            </div>
+                        </div>
+                    </div>    
+                    
+                    <div class="card mx-3 mt-3 MetodePembayaran">
+                        <div class="card-header">
+                            <h5 class="ml-3 text-uppercase">Metode Pembayaran</h5>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-check col-sm-4 mt-3 ml-4">
+                                <label>
+                                <input type="checkbox" class="radio" id="Gopay" name="MetodeP">
+                                    <img src="images/Gopay.jpg" class="gambar">
+                                </label>
+                            </div>
+                            <div class="form-group form-check col-sm-4 mt-3 ml-4">
+                                <label>
+                                <input type="checkbox" class="radio" id="Dana" name="MetodeP">
+                                    <img src="images/Dana.png" class="gambar">
+                                </label>
+                            </div>
+                            <div class="form-group form-check col-sm-4 mt-3 ml-4">
+                                <label>
+                                <input type="checkbox" class="radio" id="LinkAja" name="MetodeP">
+                                    <img src="images/LinkAja.jpg" class="gambar">
+                                </label>
+                            </div>
+                            <div class="form-group form-check col-sm-4 mt-3 ml-4">
+                                <label>
+                                <input type="checkbox" class="radio" id="Ovo" name="MetodeP">
+                                    <img src="images/Ovo.jpg" class="gambar">
+                                </label>
+                            </div>
+                            <div class="form-group form-check col-sm-4 mt-3 ml-4">
+                                <label>
+                                <input type="checkbox" class="radio" id="Atm Transfer Atau Atm Online" name="MetodeP">
+                                    <img src="images/DOKU_ATM_CHNL_LOGO.png" class="gambar">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mx-3 mt-3">
+                        <div class="card-header">
+                            <h5>KONFIRMASI</h5>
+                        </div>
+                        <div class="Konfirm ml-3 mx-3">
+                            <div class="form-group">
+                                <label for="ItemPembayaran">Item Pembayaran</label>
+                                <input type="text" class="form-control" id="ItemPembayaran" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="MetodePembayaran">Metode Pembayaran</label>
+                                <input type="text" class="form-control" id="MetodePembayaran" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="Harga">Harga</label>
+                                <input type="text" class="form-control" id="Harga" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="Bukti">Bukti Pembayaran</label>
+                                <input type="file" class="form-control-file" id="Bukti">
+                            </div>
+                            <button type="submit" class="btn btn-secondary mb-3">Submit</button>
                         </div>
                     </div>
                 </div>
-
-                <p><br>Item Pembayaran</p>
-                <div class="row radio-toolbar">
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio1" name="radios" value="Spp Tetap">
-                        <label for="radio1">Spp Tetap</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio2" name="radios" value="SPP Variable">
-                        <label for="radio2">SPP Variable</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio3" name="radios" value="Biaya Sarana Prasarana">
-                        <label for="radio3">Biaya Sarana Prasarana</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio19" name="radios" value="Biaya KTM Hilang">
-                        <label for="radio19">Biaya Perkuliahan Perbaikan</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio4" name="radios" value="Herregistrasi Tinggal Wisuda">
-                        <label for="radio4">Herregistrasi Tinggal Wisuda</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio5" name="radios" value="Herregistrasi Tinggal Pendadarana">
-                        <label for="radio5">Herregistrasi Tinggal Pendadarana</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio6" name="radios" value="Cuti">
-                        <label for="radio6">Cuti</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio7" name="radios" value="Biaya Wisuda">
-                        <label for="radio7">Biaya Wisuda</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio8" name="radios" value="Biaya Pendukung">
-                        <label for="radio8">Biaya Pendukung</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio9" name="radios" value="Dicutikan">
-                        <label for="radio9">Dicutikan</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio10" name="radios" value="Pengunduran Diri">
-                        <label for="radio10">Pengunduran Diri</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio11" name="radios" value="Pendadaran">
-                        <label for="radio11">Pendadaran</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio12" name="radios" value="Ujian Susulan">
-                        <label for="radio12">Ujian Susulan</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio13" name="radios" value="Biaya Salinan Kwitansi">
-                        <label for="radio13">Biaya Salinan Kwitansi</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio14" name="radios" value="Biaya Lupa Password">
-                        <label for="radio14">Biaya Lupa Password</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio15" name="radios" value="Biaya Cetak KTM Rusak">
-                        <label for="radio15">Biaya Cetak KTM Rusak</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio16" name="radios" value="Tunggakan">
-                        <label for="radio16">Tunggakan</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio17" name="radios" value="Biaya Legalisir">
-                        <label for="radio17">Biaya Legalisir</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio18" name="radios" value="Biaya Perkuliahan Perbaikan">
-                        <label for="radio18">Biaya Perkuliahan Perbaikan</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio20" name="radios" value="Study visit kelas internasional">
-                        <label for="radio20">Study visit kelas internasional</label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <input type="radio" id="radio18" name="radios" value="Biaya TOEFL">
-                        <label for="radio18">Biaya TOEFL</label>
-                    </div>
-                </div>
-                
-                <p><br>Metode Pembayaran</p>
-                <div class="row MetodePembayaran">
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                       <label>
-                        <input type="radio" name="MetodeP" value="Gopay">
-                        <img src="images/Gopay.jpg" class="gambar">
-                       </label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <label>
-                            <input type="radio" name="MetodeP" value="Ovo">
-                            <img src="images/Ovo.jpg" class="gambar">
-                        </label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <label>
-                            <input type="radio" name="MetodeP" value="LinkAja">
-                            <img src="images/LinkAja.jpg" class="gambar">
-                        </label>
-                    </div>
-                    <div class="col-sm-3" style="margin-top: 10px;">
-                        <label>
-                            <input type="radio" name="MetodeP" value="Dana">
-                            <img src="images/Dana.png" class="gambar">
-                        </label>
-                    </div>
-                </div>
-
             </div>
         </div>
     </main>
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    
 </body>
 
 </html>
