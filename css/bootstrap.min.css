@@ -301,7 +301,11 @@ button::-moz-focus-inner {
 input[type=checkbox],
 input[type=radio] {
     box-sizing: border-box;
+<<<<<<< HEAD
     padding: 0
+=======
+    padding: 0;
+>>>>>>> origin/Darman
 }
 
 textarea {
