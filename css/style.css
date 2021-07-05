@@ -1,4 +1,11 @@
+
 @import url("https://fonts.gstatic.com,https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+.aktif{
+  font-size: 55pt;
+  text-align: left;
+  
+}
 body {
   font-family: 'Concert One',cursive;
   background-color: #efefef;
