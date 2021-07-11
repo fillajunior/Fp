@@ -1,5 +1,9 @@
 @import url("https://fonts.gstatic.com,https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
+.mt-4-5{
+  margin-top: 2rem;
+}
+
 .aktif{
   font-size: 55pt;
   text-align: left;
@@ -14,19 +18,20 @@
 }
 
 .ItemPembayaran label {
-  display: list-item;
+  display: block;
   border-radius: 10px;
   background-color: #ddd;
   padding: 3px 20px;
   font-family: Arial;
   font-size: 16px;
   cursor: pointer;
+  height: 2rem;
+  width: 34rem;
 }
 
 .ItemPembayaran input[type="radio"]:checked+label {
   background-color: rgb(165, 162, 162);
 }
-
 
 /* IMAGE STYLES */
 .MetodePembayaran [type=radio]+img {

@@ -1,36 +1,60 @@
-$(function() {
+(function ($) {
+    "use strict";
 
-  'use strict';
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
+    // $('.validate-form .input100').each(function () {
+    //     $(this).focus(function () {
+    //         hideValidate(this);
+    //     });
+    // });
+    $('#btnLogin').click(function () {
+        var check = true;
+        var nim = $('#nim').val();
+        var password = $('#password').val();
+        console.log(password);
 
-  $('.js-menu-toggle').click(function(e) {
+        if (nim != '19.11.3105' && password != '12345') {
+            
+            for (var i = 0; i < input.length; i++) {
+                if (validate(nim,password) == false) {
+                    showValidate(input[i]);
+                    check = false;
+                }
+            }
+        } else {
+            alert('Login Success')
+            $('.validate-form').attr('action','dashboard.html')
+        }
 
-  	var $this = $(this);
-
-  	
-
-  	if ( $('body').hasClass('show-sidebar') ) {
-  		$('body').removeClass('show-sidebar');
-  		$this.removeClass('active');
-  	} else {
-  		$('body').addClass('show-sidebar');	
-  		$this.addClass('active');
-  	}
-
-  	e.preventDefault();
-
-  });
-
-  // click outisde offcanvas
-	$(document).mouseup(function(e) {
-    var container = $(".sidebar");
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      if ( $('body').hasClass('show-sidebar') ) {
-				$('body').removeClass('show-sidebar');
-				$('body').find('.js-menu-toggle').removeClass('active');
-			}
-    }
-	}); 
+    });
 
     
 
-});
+    function validate(nim,password) {
+        console.log(nim.length)
+        if (nim == null && password == nul) {
+            return false;
+        } else {
+            if (nim.length >= 10 && password.length >= 5) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+
+})(jQuery);

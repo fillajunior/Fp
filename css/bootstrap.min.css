@@ -301,11 +301,7 @@ button::-moz-focus-inner {
 input[type=checkbox],
 input[type=radio] {
     box-sizing: border-box;
-<<<<<<< HEAD
-    padding: 0
-=======
     padding: 0;
->>>>>>> origin/Darman
 }
 
 textarea {
@@ -3969,7 +3965,8 @@ input[type=submit].btn-block {
 .btn-group-toggle>.btn-group>.btn input[type=radio] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
-    pointer-events: none
+    pointer-events: none;
+    display:none;
 }
 
 .input-group {

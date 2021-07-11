@@ -21,50 +21,49 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Jadwal Kuliah</title>
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>Jadwal</title>
 </head>
 
 <body>
     <aside class="sidebar">
         <div class="toggle">
-            <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-                <span></span>
-            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="side-inner">
 
             <div class="logo-wrap">
                 <div class="logo">
-                    <span>C</span>
+                    <span>DM</span>
                 </div>
-                <span class="logo-text">Colorlib</span>
+                <span class="logo-text">Dashboard</span>
             </div>
 
-            <div class="search-form">
-                <form action="#">
-                    <span class="wrap-icon">
-                        <span class="icon-search2"></span>
-                    </span>
-                    <input type="text" class="form-control" placeholder="Search...">
-                </form>
-            </div>
             <div class="nav-menu">
                 <ul>
-                    <li class="active"><a href="#" class="d-flex align-items-center"><span
-                                class="wrap-icon icon-home2 mr-3"></span><span class="menu-text">Home</span></a></li>
-                    <li><a href="#" class="d-flex align-items-center"><span
-                                class="wrap-icon icon-videocam mr-3"></span><span class="menu-text">Videos</span></a>
+                    <li class="active"><a href="dashboard.html" class="d-flex align-items-center"><i
+                                class="fas fa-fw fa-home mr-3"></i><span class="menu-text">Home</span></a></li>
+                    <li><a href="jadwal.html" class="d-flex align-items-center"><i
+                                class="far fa-fw fa-calendar mr-3"></i><span class="menu-text">Jadwal</span></a></li>
+                    <li><a href="Pembayaran.html" class="d-flex align-items-center"><i
+                                class="fas fa-fw fa-shopping-cart mr-3"></i><span
+                                class="menu-text">Pembayaran</span></a></li>
+                    <li><a href="forum.html" class="d-flex align-items-center"><i
+                                class="fas fa-fw fa-bullhorn mr-3"></i><span class="menu-text">Forum</span></a></li>
+                    <li><a href="ujian.html" class="d-flex align-items-center"><i
+                                class=" fa-fw far fa-edit mr-3"></i><span class="menu-text">Ujian</span></a></li>
+                    <li><a href="krs.html" class="d-flex align-items-center"><i
+                                class="far fa-fw fa-list-alt mr-3"></i><span class="menu-text">KRS</span></a></li>
+                    <li><a href="profile.html" class="d-flex align-items-center"><i
+                                class="fas fa-fw fa-user-edit mr-3"></i></i><span class="menu-text">Profile</span></a>
                     </li>
-                    <li><a href="#" class="d-flex align-items-center"><span
-                                class="wrap-icon icon-book mr-3"></span><span class="menu-text">Books</span></a></li>
-                    <li><a href="#" class="d-flex align-items-center"><span
-                                class="wrap-icon icon-shopping-cart mr-3"></span><span
-                                class="menu-text">Store</span></a></li>
-                    <li><a href="#" class="d-flex align-items-center"><span
-                                class="wrap-icon icon-pie-chart mr-3"></span><span
-                                class="menu-text">Analytics</span></a></li>
-                    <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-cog mr-3"></span><span
-                                class="menu-text">Settings</span></a></li>
                 </ul>
             </div>
         </div>
@@ -74,237 +73,238 @@
         <div class="site-section">
             <div class="containers">
                 <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="mb-2 page-title">Jadwal Kuliah</h2>
-         <select name="jk" id="jk" class="form-control col-2" style="background-color: lightgray;">
-           <option value="1">Kuliah Teori</option>
-           <option value="2">Kuliah Praktikum</option>
+                    <div class="col-12">
+                        <h2 class="mb-2 page-title">Jadwal Kuliah</h2>
+                        <select name="jk" id="jk" class="form-control col-2" style="background-color: lightgray;">
+                            <option value="1">Kuliah Teori</option>
+                            <option value="2">Kuliah Praktikum</option>
 
-         </select>
-        <div class="row">
-          <div class="col-md-12 jadwal_teori" >
-            <table class="table table-hover" >
-              <thead>
-               <tr>
-                  <th>
-                  <b>No.</b> 
-                  </th>
-                  <th>
-                  <b>Hari</b>
-                  </th>
-                  <th>
-                  <b>Jam</b>
-                  </th>
-                  <th>
-                  <b>Ruang</b>
-                  </th>
-                  <th>
-                  <b>Mata Kuliah</b>
-                  </th>
-                  <th>
-                    <b>Kelas</b>
-                  </th>
-                  <th>
-                    <b>Dosen Pengampu</b>
-                  </th>
-                </tr>
-              </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Senin</td>
-                <td>7.30</td>
-                <td>R.23</td>
-                <td>Perkenalan Antariksa</td>
-                <td>PA 19</td>
-                <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Selasa</td>
-                  <td>7.30</td>
-                  <td>R.13</td>
-                  <td>Biologi</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Selasa</td>
-                  <td>8.30</td>
-                  <td>R.15</td>
-                  <td>Fisika</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Rabu</td>
-                  <td>9.30</td>
-                  <td>R.23</td>
-                  <td>Fisika</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Rabu</td>
-                  <td>13.30</td>
-                  <td>R.9</td>
-                  <td>Perkenalan Antariksa</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Rabu</td>
-                  <td>14.30</td>
-                  <td>R.25</td>
-                  <td>Kimia</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Kamis</td>
-                  <td>7.30</td>
-                  <td>R.21</td>
-                  <td>Perkenalan Antariksa</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Kamis</td>
-                  <td>11.30</td>
-                  <td>R.22</td>
-                  <td>Perkenalan Antariksa</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-            </tbody>
-            
-          
+                        </select>
+                        <div class="row">
+                            <div class="col-12 jadwal_teori">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <b>No.</b>
+                                            </th>
+                                            <th>
+                                                <b>Hari</b>
+                                            </th>
+                                            <th>
+                                                <b>Jam</b>
+                                            </th>
+                                            <th>
+                                                <b>Ruang</b>
+                                            </th>
+                                            <th>
+                                                <b>Mata Kuliah</b>
+                                            </th>
+                                            <th>
+                                                <b>Kelas</b>
+                                            </th>
+                                            <th>
+                                                <b>Dosen Pengampu</b>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Senin</td>
+                                            <td>7.30</td>
+                                            <td>R.23</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Selasa</td>
+                                            <td>7.30</td>
+                                            <td>R.13</td>
+                                            <td>Biologi</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Selasa</td>
+                                            <td>8.30</td>
+                                            <td>R.15</td>
+                                            <td>Fisika</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Rabu</td>
+                                            <td>9.30</td>
+                                            <td>R.23</td>
+                                            <td>Fisika</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Rabu</td>
+                                            <td>13.30</td>
+                                            <td>R.9</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Rabu</td>
+                                            <td>14.30</td>
+                                            <td>R.25</td>
+                                            <td>Kimia</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Kamis</td>
+                                            <td>7.30</td>
+                                            <td>R.21</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Kamis</td>
+                                            <td>11.30</td>
+                                            <td>R.22</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                    </tbody>
 
-            </table>
-          </div>
-          <div class="col-md-12 jadwal_praktikum" >
-            <table class="table table-hover" >
-              <thead>
-               <tr>
-                  <th>
-                  <b>No.</b> 
-                  </th>
-                  <th>
-                  <b>Hari</b>
-                  </th>
-                  <th>
-                  <b>Jam</b>
-                  </th>
-                  <th>
-                  <b>Ruang</b>
-                  </th>
-                  <th>
-                  <b>Mata Kuliah</b>
-                  </th>
-                  <th>
-                    <b>Kelas</b>
-                  </th>
-                  <th>
-                    <b>Dosen Pengampu</b>
-                  </th>
-                </tr>
-              </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Senin</td>
-                <td>7.30</td>
-                <td>L.23</td>
-                <td>Perkenalan Antariksa</td>
-                <td>PA 19</td>
-                <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Selasa</td>
-                  <td>7.30</td>
-                  <td>L.13</td>
-                  <td>Biologi</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Selasa</td>
-                  <td>8.30</td>
-                  <td>L.15</td>
-                  <td>Fisika</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Rabu</td>
-                  <td>9.30</td>
-                  <td>L.23</td>
-                  <td>Fisika</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Rabu</td>
-                  <td>13.30</td>
-                  <td>L.9</td>
-                  <td>Perkenalan Antariksa</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Rabu</td>
-                  <td>14.30</td>
-                  <td>L.25</td>
-                  <td>Kimia</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Kamis</td>
-                  <td>7.30</td>
-                  <td>L.21</td>
-                  <td>Perkenalan Antariksa</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Kamis</td>
-                  <td>11.30</td>
-                  <td>L.22</td>
-                  <td>Perkenalan Antariksa</td>
-                  <td>PA 19</td>
-                  <td>Sudrajat</td>
-                </tr>
-            </tbody>
-            
-          
 
-            </table>
-          </div>
-        </div>
 
-      </div>
-    </div>
+                                </table>
+                            </div>
+                            <div class="col-12 jadwal_praktikum">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <b>No.</b>
+                                            </th>
+                                            <th>
+                                                <b>Hari</b>
+                                            </th>
+                                            <th>
+                                                <b>Jam</b>
+                                            </th>
+                                            <th>
+                                                <b>Ruang</b>
+                                            </th>
+                                            <th>
+                                                <b>Mata Kuliah</b>
+                                            </th>
+                                            <th>
+                                                <b>Kelas</b>
+                                            </th>
+                                            <th>
+                                                <b>Dosen Pengampu</b>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Senin</td>
+                                            <td>7.30</td>
+                                            <td>L.23</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Selasa</td>
+                                            <td>7.30</td>
+                                            <td>L.13</td>
+                                            <td>Biologi</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Selasa</td>
+                                            <td>8.30</td>
+                                            <td>L.15</td>
+                                            <td>Fisika</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Rabu</td>
+                                            <td>9.30</td>
+                                            <td>L.23</td>
+                                            <td>Fisika</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Rabu</td>
+                                            <td>13.30</td>
+                                            <td>L.9</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Rabu</td>
+                                            <td>14.30</td>
+                                            <td>L.25</td>
+                                            <td>Kimia</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Kamis</td>
+                                            <td>7.30</td>
+                                            <td>L.21</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Kamis</td>
+                                            <td>11.30</td>
+                                            <td>L.22</td>
+                                            <td>Perkenalan Antariksa</td>
+                                            <td>PA 19</td>
+                                            <td>Sudrajat</td>
+                                        </tr>
+                                    </tbody>
+
+
+
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/all.js"></script>
     <script src="js/jadwal.js"></script>
 </body>
 

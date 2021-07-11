@@ -9,8 +9,8 @@ $(document).ready(function(){
         $('#ItemPembayaran').val(item);
     });
 
-    $('.MetodePembayaran input:checkbox').click(function() {
-        $('.MetodePembayaran input:checkbox').not(this).prop('checked', false);
+    $('.MetodePembayaran input:radio').click(function() {
+        $('.MetodePembayaran input:radio').not(this).prop('checked', false);
         metode = $('input[name = "MetodeP"]:checked').attr('id');
         b = metode;
         $('#MetodePembayaran').val(metode);
