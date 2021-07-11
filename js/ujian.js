@@ -19,4 +19,65 @@ $(document).ready(function () {
         }
        
     })
+//   $('#buts1').click(function(){
+//  if ($('#jawabanuts1').val()==''){
+//           alert("Mohon Isi jawaban Terlebih Dahulu")
+//      }
+//      else {
+//        alert("File Jawaban UTS Berhasil Diupload");
+//        $('#jawabanuts1').val('')   
+//      }
+// });
+//   $('#buts2').click(function(){
+//  if ($('#jawabanuts2').val()==''){
+//           alert("Mohon Isi jawaban Terlebih Dahulu")
+//      }
+//      else {
+//        alert("File Jawaban UTS Berhasil Diupload");
+//        $('#jawabanuts2').val('')   
+//      }
+// });
+//   $('#buts3').click(function(){
+//  if ($('#jawabanuts3').val()==''){
+//           alert("Mohon Isi jawaban Terlebih Dahulu")
+//      }
+//      else {
+//        alert("File Jawaban UTS Berhasil Diupload");
+//        $('#jawabanuts3').val('')   
+//      }
+// });
+//   $('#buts4').click(function(){
+//  if ($('#jawabanuts4').val()==''){
+//           alert("Mohon Isi jawaban Terlebih Dahulu")
+//      }
+//      else {
+//        alert("File Jawaban UTS Berhasil Diupload");
+//        $('#jawabansusulan4').val('')   
+//      }
+// });
+
+
+//  $('#buas1*').click(function(){
+//  if ($('#jawabansusulan*').val()==''){
+//           alert("Mohon Isi jawaban Terlebih Dahulu")
+//      }
+//      else {
+//        alert("File Jawaban UAS Berhasil Diupload");
+//        $('#jawabansusulan*').val('')   
+//      }
+// });
+
+
+// $('#bus1*').click(function(){
+//      if ($('#jawabansusulan*').val()==''){
+//           alert("Mohon Isi jawaban Terlebih Dahulu")
+//      }
+//      else {
+//        alert("File Jawaban Ujian Susulan Berhasil Diupload");
+//        $('#jawabansusulan*').val('')   
+//      }
+ 
+// });
+
 })
+
