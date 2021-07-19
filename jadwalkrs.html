@@ -21,49 +21,50 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/all.css">
-
-    <title>KRS</title>
+    <title>Jadwal Kuliah</title>
 </head>
 
 <body>
     <aside class="sidebar">
         <div class="toggle">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-                        <span></span>
-                    </a>
-                </li>
-            </ul>
+            <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
         </div>
         <div class="side-inner">
 
             <div class="logo-wrap">
                 <div class="logo">
-                    <span>DM</span>
+                    <span>C</span>
                 </div>
-                <span class="logo-text">Dashboard</span>
+                <span class="logo-text">Colorlib</span>
             </div>
 
+            <div class="search-form">
+                <form action="#">
+                    <span class="wrap-icon">
+                        <span class="icon-search2"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
             <div class="nav-menu">
                 <ul>
-                    <li class="active"><a href="dashboard.html" class="d-flex align-items-center"><i
-                                class="fas fa-fw fa-home mr-3"></i><span class="menu-text">Home</span></a></li>
-                    <li><a href="jadwal.html" class="d-flex align-items-center"><i
-                                class="far fa-fw fa-calendar mr-3"></i><span class="menu-text">Jadwal</span></a></li>
-                    <li><a href="Pembayaran.html" class="d-flex align-items-center"><i
-                                class="fas fa-fw fa-shopping-cart mr-3"></i><span
-                                class="menu-text">Pembayaran</span></a></li>
-                    <li><a href="forum.html" class="d-flex align-items-center"><i
-                                class="fas fa-fw fa-bullhorn mr-3"></i><span class="menu-text">Forum</span></a></li>
-                    <li><a href="ujian.html" class="d-flex align-items-center"><i
-                                class=" fa-fw far fa-edit mr-3"></i><span class="menu-text">Ujian</span></a></li>
-                    <li><a href="krs.html" class="d-flex align-items-center"><i
-                                class="far fa-fw fa-list-alt mr-3"></i><span class="menu-text">KRS</span></a></li>
-                    <li><a href="profile.html" class="d-flex align-items-center"><i
-                                class="fas fa-fw fa-user-edit mr-3"></i></i><span class="menu-text">Profile</span></a>
+                    <li class="active"><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-home2 mr-3"></span><span class="menu-text">Home</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-videocam mr-3"></span><span class="menu-text">Videos</span></a>
                     </li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-book mr-3"></span><span class="menu-text">Books</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-shopping-cart mr-3"></span><span
+                                class="menu-text">Store</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-pie-chart mr-3"></span><span
+                                class="menu-text">Analytics</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-cog mr-3"></span><span
+                                class="menu-text">Settings</span></a></li>
                 </ul>
             </div>
         </div>
@@ -72,180 +73,107 @@
     <main>
         <div class="site-section">
             <div class="containers">
-                <div class="card">
-                    <div class="card-header dark text-white">
-                        <h2 class="judul">Jadwal Pengambilan KRS</h2>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h2 class="mb-2 page-title">Jadwal KRS</h2>
+                        <div class="row">
+                            <div class="col-md-12 jadwal_teori">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <b>No</b>
+                                            </th>
+                                            <th>
+                                                <b>Nama Prodi</b>
+                                            </th>
+                                            <th>
+                                                <b>Angkatan</b>
+                                            </th>
+                                            <th>
+                                                <b>Tanggal Mulai</b>
+                                            </th>
+                                            <th>
+                                                <b>Tanggal Selesai</b>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>S1 Informatika</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.23</td>
+                                            <td>Perkenalan Antariksa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>S1 Teknologi Informasi</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.13</td>
+                                            <td>Biologi</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>S1 Teknik Komputer</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.15</td>
+                                            <td>Fisika</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>S1 Arsitektur</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.23</td>
+                                            <td>Fisika</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>S1 Akuntansi</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.9</td>
+                                            <td>Perkenalan Antariksa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>S1 Sistem Informasi</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.25</td>
+                                            <td>Kimia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>S1 Geografi</td>
+                                            <td>Semua Angkatan</td>
+                                            <td>R.21</td>
+                                            <td>Perkenalan Antariksa</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-box w-60 mt-6 mb-1">
+                                                    <button type="button" onclick="location.href='index.html';"
+                                                        class="btn mb-2 btn-primary btn-lg btn-block">
+                                                        <i class="fe fe-shopping-cart fe-12 mr-2"></i><span
+                                                            class="small">Kembali</span>
+                                                    </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <table class="table table-striped mt-3">
-                    <thead>
-                        <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">NAMA PRODI</th>
-                            <th scope="col">ANGKATAN</th>
-                            <th scope="col">TGL MULAI</th>
-                            <th scope="col">TGL SELESAI</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><a href="" class="text-dark">D3 - Teknik Informatika</a></td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>D3 - Manajemen Informatika</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>S1 - Informatika</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>S1 - Sistem Informasi</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>S1 - Informatika, Transfer</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>S1 - Sistem Informasi, Transfer</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">7</th>
-                            <td>S1 - Bachelor Information Technology</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">8</th>
-                            <td>S1 - Bachelor Informatics</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>S1 - Bachelor Information System</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">10</th>
-                            <td>S1 - Bachelor Communication Science</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">11</th>
-                            <td>S1 - Teknologi Informasi</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">12</th>
-                            <td>S1 - Teknik Komputer</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">13</th>
-                            <td>S1 - Arsitektur</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">14</th>
-                            <td>S1 - Geografi</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">15</th>
-                            <td>S1 - Perencanaan Wilayah dan kota</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">16</th>
-                            <td>S1 - Ekonomi</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">17</th>
-                            <td>S1 - Kewirausahaan</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">18</th>
-                            <td>S1 - Akuntansi</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">19</th>
-                            <td>S1 - Ilmu Pemerintahan</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">20</th>
-                            <td>S1 - Hubungan Internasional</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">21</th>
-                            <td>S1 - Ilmu Komunikasi</td>
-                            <td>Semua Angkatan</td>
-                            <td>2021-03-01 00:00:00</td>
-                            <td>2021-03-15 23:59:59</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
+        </div>
     </main>
-
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main2.js"></script>
-    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jadwal.js"></script>
 </body>
 
 </html>
