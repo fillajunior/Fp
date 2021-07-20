@@ -9,5 +9,9 @@ $(document).ready(function () {
              $('.jadwal_praktikum').show()
         }
        
-    })
+    });
+
+    $('tr[data-href]').click(function () {
+        document.location = $(this).data('href');
+    });
 })
