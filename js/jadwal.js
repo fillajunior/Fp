@@ -13,5 +13,7 @@ $(document).ready(function () {
 
     $('tr[data-href]').click(function () {
         document.location = $(this).data('href');
+        $('#jk').empty()
+        $('#ujian').empty()
     });
 })
