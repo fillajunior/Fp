@@ -24,7 +24,7 @@ $(document).ready(function(){
         }else if(b == null){
             alert("Metode Pembayaran Belum Dipilih");
         }else{
-            alert("Pembayaran Berhasil");
+            alert("Pembayaran Sedang Di Proses");
             window.location.href = "Pembayaran.html";
         }
     });
