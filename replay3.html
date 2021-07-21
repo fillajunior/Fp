@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/logo/amikom.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Forum</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="toggle">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="side-inner">
+
+            <div class="logo-wrap">
+                <div class="logo">
+                    <span>C</span>
+                </div>
+                <span class="logo-text">Colorlib</span>
+            </div>
+
+            <div class="search-form">
+                <form action="#">
+                    <span class="wrap-icon">
+                        <span class="icon-search2"></span>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="active"><a href="index.html" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-home2 mr-3"></span><span class="menu-text">Home</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-videocam mr-3"></span><span class="menu-text">Videos</span></a>
+                    </li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-book mr-3"></span><span class="menu-text">Books</span></a></li>
+                    <li><a href="Pembayaran.html" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-shopping-cart mr-3"></span><span
+                                class="menu-text">Store</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span
+                                class="wrap-icon icon-pie-chart mr-3"></span><span
+                                class="menu-text">Analytics</span></a></li>
+                    <li><a href="#" class="d-flex align-items-center"><span class="wrap-icon icon-cog mr-3"></span><span
+                                class="menu-text">Settings</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="site-section">
+            <div class="containers">
+                <div class="card">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Alhus Febuari 15, 2021
+                    </div>
+                    <div class="card-body">
+                        <p>oke jadi di sini masalahnya.
+                            <br>
+                            <img src="images/forum/q3.jpg" alt="">
+                            <br>
+                            ok jadi ini semua berfungsi dengan baik, elemen
+                            menyembunyikan dirinya sendiri ketika saya menggerakkan mouse dari div kanan ke kiri.
+                            Masalahnya adalah itu juga bersembunyi ketika saya bergerak di antara berbagai div di
+                            dalamnya. Saya perlu membuat pengguna menavigasi di sekitar div kanan, lalu
+                            menghilangkannya ketika menggerakkan mouse ke div kiri.
+                            Masalah lain adalah saya tidak dapat menggunakan jquery pada proyek ini, harus dilakukan
+                            dalam vanilla js murni. Apakah benar-benar tidak ada cara bagi DOM untuk menangani acara
+                            semacam ini?</p>
+                        <br>
+                        <button type="button" class="btn btn-primary mt-3 button-replay">Replay</button>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Filla Febuari 25, 2021
+                    </div>
+                    <div class="card-body">
+                        <p>Anda ingin menggunakan onmouseleavetidakonmouseout
+                            Mouse Out memicu untuk setiap anak secara terpisah, mouse pergi ketika meninggalkan elemen
+                            set.</p>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Andre Febuari 26, 2021
+                    </div>
+                    <div class="card-body">
+                        <p>Seperti yang telah ditunjukkan orang lain, acara yang benar untuk digunakan adalah
+                            mouseleavekarena, seperti yang dinyatakan oleh dokumentasi:
+
+                            mouseleave dan mouseout serupa tetapi berbeda karena mouseleave tidak menggelembung dan
+                            mouseout tidak. Ini berarti mouseleave dipecat ketika pointer telah keluar dari elemen dan
+                            semua turunannya, sedangkan mouseout dipecat ketika pointer meninggalkan elemen atau
+                            meninggalkan salah satu keturunan elemen (bahkan jika pointer masih di dalam elemen).
+
+                            Selain itu, Anda tidak boleh menggunakan atribut acara HTML sebaris untuk menyiapkan acara
+                            Anda . Sebagai gantinya, ikuti standar modern dan pisahkan kode penanganan acara Anda dari
+                            HTML Anda.
+
+                            Dan, untuk menyembunyikan elemen, Anda tidak boleh menghapus kontennya. Sebagai gantinya,
+                            sembunyikan elemen secara harfiah, yang dapat dilakukan melalui CSS dengan display:none,
+                            visibility:hidden, atau opacity:0.</p>
+                        <img src="images/forum/aw8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header dark text-white">
+                        <i class="far fa-user blue"></i> Bintang Febuari 27, 2021
+                    </div>
+                    <div class="card-body">
+                        <p>Anda dapat mencapai ini dalam Javascript dengan mouseleaveacara tersebut. Sebagai pendengar
+                            acara sebaris, itu akan menjadi:
+                            <br>
+                            <img src="images/forum/aw9.1.jpg" alt="">
+                            <br>
+                            <b>Contoh kerja:</b>
+                            <br>
+                            <img src="images/forum/aw9.2.jpg" alt="">
+                            <br>
+                            Tetapi lebih baik memisahkan JavaScript dan HTML. Jadi itu dalam JavaScript:
+                            <br>
+                            <b>Contoh kerja:</b>
+                            <br>
+                            <img src="images/forum/aw9.3.jpg" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="card mt-3 replay-forum">
+                    <div class="card-header dark text-white">
+                        Replay
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="replay">Replay</label>
+                            <textarea class="form-control" id="replay" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-danger button-close">Close</button>
+                        <button type="button" class="btn btn-primary ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/forum.js"></script>
+</body>
+
+</html>

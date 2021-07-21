@@ -199,7 +199,7 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     overflow: auto;
-    -ms-overflow-style: scrollbar
+    -ms-overflow-style: scrollbar;
 }
 
 figure {
@@ -301,7 +301,7 @@ button::-moz-focus-inner {
 input[type=checkbox],
 input[type=radio] {
     box-sizing: border-box;
-    padding: 0;
+    padding: 0
 }
 
 textarea {
