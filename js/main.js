@@ -13,19 +13,17 @@
         var check = true;
         var nim = $('#nim').val();
         var password = $('#password').val();
-        console.log(password);
-
-        if (nim != '19.11.3105' && password != '12345') {
-            
+        
+        if (nim == '19.11.3105' && password == '12345') {
+            alert('Login Success')
+            $('.validate-form').attr('action','dashboard.html')
+        } else {
             for (var i = 0; i < input.length; i++) {
                 if (validate(nim,password) == false) {
                     showValidate(input[i]);
                     check = false;
                 }
             }
-        } else {
-            alert('Login Success')
-            $('.validate-form').attr('action','dashboard.html')
         }
 
     });
@@ -34,7 +32,7 @@
 
     function validate(nim,password) {
         console.log(nim.length)
-        if (nim == null && password == nul) {
+        if (nim == null && password == null) {
             return false;
         } else {
             if (nim.length >= 10 && password.length >= 5) {

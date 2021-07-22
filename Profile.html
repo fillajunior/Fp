@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="css/all.css">
     
-    <title>Sidebar #1</title>
+    <title>Profile</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             </div>
             <div class="nav-menu">
                 <ul>
-                    <li class="active"><a href="dashboard.html" class="d-flex align-items-center"><i
+                    <li ><a href="dashboard.html" class="d-flex align-items-center"><i
                                 class="fas fa-fw fa-home mr-3"></i><span class="menu-text">Home</span></a></li>
                     <li><a href="jadwal.html" class="d-flex align-items-center"><i
                                 class="far fa-fw fa-calendar mr-3"></i><span class="menu-text">Jadwal</span></a></li>
@@ -60,7 +60,7 @@
                                 class=" fa-fw far fa-edit mr-3"></i><span class="menu-text">Ujian</span></a></li>
                     <li><a href="krs.html" class="d-flex align-items-center"><i
                                 class="far fa-fw fa-list-alt mr-3"></i><span class="menu-text">KRS</span></a></li>
-                    <li><a href="profile.html" class="d-flex align-items-center"><i
+                    <li class="active"><a href="profile.html" class="d-flex align-items-center"><i
                                 class="fas fa-fw fa-user-edit mr-3"></i></i><span class="menu-text">Profile</span></a>
                     </li>
                 </ul>
@@ -70,11 +70,13 @@
     <main>
         <div class="site-section">
             <div class="containers">
-                <h5>Data Mahasiswa</h5>
+                <div class="card-header bg-amikom text-white mb-3">
+                    <h5 class="my-3">Data Mahasiswa</h5>
+                </div>
                 <div class="row">
                     <div class="col-6">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-amikom text-white">
                                 <h5>Biodata Mahasiswa</h5>
                             </div>
                             <div class="card-body">
@@ -145,49 +147,30 @@
                             </div>
                         </div>
 
-                        <div class="card Alamat">
-                            <div class="card-header">
+                        <div class="card Alamat mt-3">
+                            <div class="card-header bg-amikom text-white">
                                 <h5>Data Alamat Asal</h5>
                             </div>
                             <div class="col-sm-12 col-md-12 card-body card-padding p-t-20">
                                 <div class="form-group">
                                     <label for="Alamat">Alamat</label>
-                                    <input type="text" class="form-control" id="Alamat" readonly>
+                                    <input type="text" class="form-control" id="Alamat" readonly value="Samping Rumah Orang Kaya">
                                 </div>
                                 <div class="form-group">
                                     <label for="Kecamatan/Kabupaten/Provinsi">Kecamatan/Kabupaten/Provinsi</label>
-                                    <input type="text" class="form-control" id="Kecamatan/Kabupaten/Provinsi" readonly>
+                                    <input type="text" class="form-control" id="Kecamatan/Kabupaten/Provinsi" readonly value="Mbantul/Sleman/Bali">
                                 </div>
                                 <div class="form-group">
                                     <label for="Kode Pos">Kode Pos</label>
-                                    <input type="text" class="form-control" id="Kode Pos" readonly>
+                                    <input type="text" class="form-control" id="Kode Pos" readonly value="88123">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card Alamat">
-                            <div class="card-header">
-                                <h5>Data Alamat Tinggal</h5>
-                            </div>
-                            <div class="col-sm-12 col-md-12 card-body card-padding p-t-20">
-                                <div class="form-group">
-                                    <label for="Alamat">Alamat</label>
-                                    <input type="text" class="form-control" id="Alamat" readonly>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Kecamatan/Kabupaten/Provinsi">Kecamatan/Kabupaten/Provinsi</label>
-                                    <input type="text" class="form-control" id="Kecamatan/Kabupaten/Provinsi" readonly>
-                                </div>
-                                <div class="form-group">
-                                    <label for="Kode Pos">Kode Pos</label>
-                                    <input type="text" class="form-control" id="Kode Pos" readonly>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="col-6">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-amikom text-white">
                                 <h5>Biodata Ayah Kandung</h5>
                             </div>
                             <div class="col-sm-12 col-md-12 card-body card-padding p-t-20">
@@ -216,7 +199,7 @@
                                     <input type="text" class="form-control" id="Penghasilan " readonly value="Lebih Dari Rp. 20,000,000">
                                 </div>
                             </div>
-                            <div class="card-header rounded-top">
+                            <div class="card-header bg-amikom text-white rounded-top">
                                 <h5>Biodata Ibu Kandung</h5>
                             </div>
                             <div class="col-sm-12 col-md-12 card-body card-padding p-t-20">
@@ -247,22 +230,45 @@
                             </div>
                         </div>
 
-                        <div class="card Alamat">
-                            <div class="card-header">
+                        <div class="card Alamat mt-3">
+                            <div class="card-header bg-amikom text-white">
                                 <h5>Data Alamat Orang Tua</h5>
                             </div>
                             <div class="col-sm-12 col-md-12 card-body card-padding p-t-20">
                                 <div class="form-group">
                                     <label for="Alamat">Alamat</label>
-                                    <input type="text" class="form-control" id="Alamat" readonly value="">
+                                    <input type="text" class="form-control" id="Alamat" readonly value="Samping Rumah Orang Kaya">
                                 </div>
                                 <div class="form-group">
                                     <label for="Kecamatan/Kabupaten/Provinsi">Kecamatan/Kabupaten/Provinsi</label>
-                                    <input type="text" class="form-control" id="Kecamatan/Kabupaten/Provinsi" readonly>
+                                    <input type="text" class="form-control" id="Kecamatan/Kabupaten/Provinsi" readonly
+                                        value="Mbantul/Sleman/Bali">
                                 </div>
                                 <div class="form-group">
                                     <label for="Kode Pos">Kode Pos</label>
-                                    <input type="text" class="form-control" id="Kode Pos" readonly>
+                                    <input type="text" class="form-control" id="Kode Pos" readonly value="88123">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card Alamat mt-3">
+                            <div class="card-header bg-amikom text-white">
+                                <h5>Data Alamat Tinggal</h5>
+                            </div>
+                            <div class="col-sm-12 col-md-12 card-body card-padding p-t-20">
+                                <div class="form-group">
+                                    <label for="Alamat">Alamat</label>
+                                    <input type="text" class="form-control" id="Alamat" readonly
+                                        value="Samping Rumah Orang Kaya">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Kecamatan/Kabupaten/Provinsi">Kecamatan/Kabupaten/Provinsi</label>
+                                    <input type="text" class="form-control" id="Kecamatan/Kabupaten/Provinsi" readonly
+                                        value="Mbantul/Sleman/Bali">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Kode Pos">Kode Pos</label>
+                                    <input type="text" class="form-control" id="Kode Pos" readonly value="88123">
                                 </div>
                             </div>
                         </div>
